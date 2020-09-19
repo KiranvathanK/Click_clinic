@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    
+    
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    margin-bottom: 50%;
+}
+
+td, th {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+a{
+  color:black;
+}
+
+
+
+</style>
+</head>
+<body style="background-image:url('click.jpg')">
+
+    <img src="logo.png" style="height: 140px;width:140px;float:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <input type="image"src="user.jpg" width="50" height="45" onclick="opForm()" style="float:right;border-radius: 50%;margin-right: 3px;margin-top: 5px;">
+    
+<h2   style="text-align:center;">Doctors list</h2>
+
+<table>
+  <tr>
+    <th style="background-color:grey;">Doctor Name</th>
+    <th style="background-color:grey;">Specialization</th>
+    <th style="background-color:grey;">Contact Number</th>
+  </tr>
+  <tr>
+      <td><a type="button" href="profilecard.html">Dr.Preetham</a></td>
+    <td>OrthoPedic</td>
+    <td >1800109090</td>
+  </tr>
+  <tr>
+      <td> <a type="button" href="myFunction()">Dr.Rithesh</a></td>
+    <td>Pysician</td>
+    <td >0801009010</td>
+  </tr>
+  <tr>
+    <td><a type="button" href="myFunction()">Dr.Karan</a></td>
+    <td>Dentist</td>
+    <td>08192002070</td>
+  </tr>
+  <tr>
+    <td><a type="button" href="myFunction()">Dr.KanthRaj</a></td>
+    <td>Cardiology</td>
+    <td >08192324589</td>
+  </tr>
+       <script>
+          function myFunction() {
+          window.open("detials1.html");
+            }
+      </script>
+      
+      
+      
+  </tr>
+</table>
+
+</body>
+</html>

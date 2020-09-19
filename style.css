@@ -1,0 +1,142 @@
+form{
+    width:28%;
+    height: 55%;
+    margin-left:55%;
+    background-color:skyblue;
+    border-radius: 3ex;
+  
+  }
+  label{
+    padding:20px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    
+    border: 1px solid #ccc;
+      border-radius: 15px;
+    box-sizing: border-box;
+      margin-top:20px;
+  }
+  
+  button {
+    background-color:blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+      margin-left:38%;
+      margin-top: 35px
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .container {
+    padding: 16px;
+      margin-top: 25px;
+  }
+
+  a{
+      margin-left:45%;
+      margin-top:30%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+  
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color:white;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    height:100px;
+  }
+  
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom:23%;
+    left: 200px;
+    z-index: 9;
+  
+  }
+  
+  .form-container {
+    width: 500px;
+    height:400px;
+    padding: 10px;
+    background-color:rgb(0,0,0,0.7);
+  }
+  
+  
+  .form-container input[type=text]{
+    width: 50%;
+    margin-top: 100px;;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  
+  .form-container .cancel {
+    background-color: red;
+    margin-top:10px;
+  }
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  label{
+      color:white;
+  }
+  
+ 

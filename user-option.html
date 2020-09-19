@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-image:url('click.jpg')">
+        <div>
+            <img src="logo.png" style="float:left" alt="logo" height="150px" width="180px">
+            <input type="image"src="user.jpg" width="50" height="45" onclick="opForm()" style="float:right;border-radius: 50%;margin-right: 3px;margin-top: 5px;">
+        </div>
+        <button class="open-button" style="margin-right:35%;margin-bottom: 30%;"onclick="openForm()"><b>Search for Doctors</b></button>
+        <button class="open-button" style="margin-right:35%;margin-bottom: 13%" onclick="formopen()"><b>Search based on Health issue</b></button>
+
+        <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+     <label for="text"><b>Doctor Clinic</b></label>
+    <input type="text" placeholder="enter doctor" name="text" required>
+<button type="submit" class="btn" onclick="document.location='list.html'">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<div class="form-popup" id="Form">
+    <form action="/action_page.php" class="form-container">
+       <label for="text"><b>Health Issue</b></label>
+      <input type="text" placeholder="Enter Health issue" name="text" required>
+  <button type="submit" class="btn" onclick="document.location='list.html'">Submit</button>
+      <button type="button" class="btn cancel" onclick="formclose()">Close</button>
+    </form>
+  </div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+
+    function formopen() {
+      document.getElementById("Form").style.display = "block";
+    }
+    
+    
+    function formclose() {
+      document.getElementById("Form").style.display = "none";
+    }
+    </script>
+    
+    </body>
+    </html>

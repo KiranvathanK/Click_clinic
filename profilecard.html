@@ -1,0 +1,140 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color:rgba(16, 95, 214, 0.267);
+  max-width: 600px;
+  height:460px;
+  margin-top: 90px;
+  margin-left: 26%;
+  text-align: center;
+  font-family: arial;
+  padding:5px;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top:30px;
+}
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    margin-left: 18%;
+    bottom:23%;
+    left: 200px;
+    z-index: 9;
+
+  
+  }
+  
+  .form-container {
+    width: 400px;
+    height:300px;
+    padding: 10px;
+    background-color:rgb(0,0,0,0.9);
+    border-radius: 2em;
+  }
+  
+  
+  .form-container input[type=time],.form-container input[type=date]{
+    margin-top:30px;
+    width: 60%;
+  margin-bottom: 1em;;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+   
+   
+
+
+
+</style>
+</head>
+<body style="background-image:url('click.jpg')">
+   
+    <img src="logo.png" style="height: 140px;width:140px;float:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <input type="image"src="user.jpg" width="50" height="45" style="float:right;border-radius: 50%;margin-right: 3px;margin-top: 5px;">
+    
+
+
+
+    <div class="card">
+  <img src="user.jpg" alt="img" style="width:30%;height: 40%; float:left;border-radius: 50%;">
+ <h3 style="margin-top:18px;margin-left:102px;"> Name:Preetham
+    <p class="title"><b>specilization:ortho</b></p>
+    <p><b>phone:123456789</b></h3></p>
+    <p><b>address:#123 sree building kr puram banglore-572105</b></p><br>
+  
+   
+      <h2 style="text-align:center;">Appointment Availability</h2>
+      <div style="float:left">
+          <label><b>Sunday:</b><label><br>
+         <label ><b>monday:</b><label><br>
+         <label><b>tuesday:</b><label><br>
+         <label><b>wednesday:</b><label><br>
+          <label><b>thursday:</b><label><br>
+        <label><b>Friday:</b><label><br>
+        <label><b>Saturday:</b><label><br>
+        </label></label></div>
+            <button type="button" onclick="openForm()">Book Appointment</button>
+
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                 <label for="time"><b style="color:white;">Time</b></label>
+                <input type="time" placeholder="enter doctor" name="text" required><br>
+                <label for="date"><b style="color:white;">Date</b></label>
+                <input type="date" placeholder="enter doctor" name="text" required>
+            <button type="submit" style="background-color:blue;" class="btn" onclick="closeForm()">Submit</button>
+            <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+              
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+          </script>
+          
+
+
+</body>
+</html>
